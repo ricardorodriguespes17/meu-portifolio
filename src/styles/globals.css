@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './scroll.css';
+
+:root, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  @apply text-5xl font-semibold text-primary;
+}
+
+h2 {
+  @apply text-3xl font-semibold text-primary;
+}
+
+h3 {
+  @apply text-2xl font-medium text-primary;
+}
+
+label {
+  @apply text-base font-medium text-gray-900;
+}
+
+p {
+  @apply text-base text-gray-900;
+}
+
+a {
+  @apply text-primary hover:text-accent no-underline
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
