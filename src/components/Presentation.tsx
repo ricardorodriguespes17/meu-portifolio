@@ -1,3 +1,4 @@
+import Button from "./ui/Button"
 import Section from "./ui/Section"
 import Text from "./ui/Text"
 
@@ -11,11 +12,14 @@ const Presentation = () => {
         <Text type="h3">Desenvolvedor fullstack</Text>
       </div>
 
-      <Text type="p" className="w-[700px] max-w-full text-justify">
+      <Text type="p" className="w-[700px] max-w-full text-justify mb-10">
         Apaixonado por Javascript e desenvolvimento de aplicações. Gosto de
         solucionar problemas usando programação. Muito curioso, sempre estou
         rastreando as novas tecnologias na área.
       </Text>
+
+      <Button variant="secondary">Entrar em contato</Button>
+      <Button variant="plain">Ver mais</Button>
     </Section>
   )
 }

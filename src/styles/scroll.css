@@ -7,11 +7,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-cream-100 rounded-lg;
+  @apply bg-white rounded-lg;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-100 rounded-xl border-4 border-cream-100 border-solid;
+  @apply bg-primary-100 rounded-xl border-4 border-white border-solid;
 }
 
 ::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-thumb:hover {

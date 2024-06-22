@@ -6,7 +6,7 @@ type SidebarProps = {
 const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
   return (
     <aside
-      className={`fixed inset-0 z-40 flex bg-cream-100 text-primary transform 
+      className={`fixed inset-0 z-40 flex bg-white text-primary transform 
         p-6
         ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
         transition-transform duration-300 ease-in-out md:hidden`}
