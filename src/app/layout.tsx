@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + " flex flex-col gap-8 justify-center items-center bg-primary bg-wallpapper bg-cover h-full p-8"}>
+        {children}
+      </body>
     </html>
   );
 }

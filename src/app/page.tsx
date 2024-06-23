@@ -1,14 +1,23 @@
-import Main from "@/components/Main";
+import Main from "@/components/MainContainer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 justify-center items-center bg-primary bg-wallpapper bg-cover h-full p-8">
+    <>
       <div className="flex flex-col items-center gap-2">
         <h1>Ricardo Rodrigues</h1>
         <p>Desenvolvedor Fullstack</p>
       </div>
 
-      <Main />
-    </main>
+      <Main>
+        <Main.Button navigateTo="/about" label="Sobre" iconName="about" />
+        <Main.Button navigateTo="/skills" label="Habilidades" iconName="rocket" />
+        <Main.Button navigateTo="/formation" label="Formação" iconName="academic" />
+        <Main.Button navigateTo="/projects" label="Projetos" iconName="projects" />
+        <Main.Button navigateTo="/contacts" label="Contatos" iconName="contact" />
+        <Main.Button navigateTo="/github" label="Github" iconName="github" />
+        <Main.Button navigateTo="/site" label="Site" iconName="info" />
+        <Main.Button navigateTo="/feedback" label="Feedback" iconName="feedback" />
+      </Main>
+    </>
   );
 }
