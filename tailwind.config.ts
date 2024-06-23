@@ -34,13 +34,11 @@ const config: Config = {
         },
         'white': '#fff',
         'black': '#0e0000',
-        'accent': '#CC5500',
+        'accent': '#f55302',
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+        'code': "linear-gradient(to right, #fff, #ffffffa0), url('/img/code.jpg')",
+      }
     },
   },
   plugins: [

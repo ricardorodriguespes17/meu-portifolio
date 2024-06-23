@@ -4,10 +4,10 @@ type ButtonProps = {
   variant?: "solid" | "outlined" | "plain" | "secondary"
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ({ variant = "solid", children, ...rest }: ButtonProps) => {
+const Button = ({ variant = "solid", className, children, ...rest }: ButtonProps) => {
 
   const buttonSizeClass = () => {
-    let className = "py-4 px-6 rounded hover:opacity-80 transition-opacity"
+    let className = "py-4 px-6 rounded-lg transtion-all duration-500 hover:font-bold"
 
     return className
   }
@@ -23,7 +23,7 @@ const Button = ({ variant = "solid", children, ...rest }: ButtonProps) => {
         className += "bg-transparent border-0 text-primary-800"
         break;
       case "secondary":
-        className += "bg-accent border-0 text-white"
+        className += "bg-accent border-0 text-white hover:shadow-lg"
         break;
       default:
         className += "bg-primary border-0 text-white"
@@ -34,7 +34,10 @@ const Button = ({ variant = "solid", children, ...rest }: ButtonProps) => {
   }
 
   return (
-    <button className={buttonVariantClass() + " " + buttonSizeClass()} {...rest}>
+    <button
+      className={buttonVariantClass() + " " + buttonSizeClass() + " " + className}
+      {...rest}
+    >
       {children}
     </button>
   )

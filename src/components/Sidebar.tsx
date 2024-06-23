@@ -18,7 +18,7 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
         ×
       </button>
       <nav className="space-y-4 text-2xl">
-        <a href="#home" className="block" onClick={toggleSidebar}>Home</a>
+        <a href="#home" className="block" onClick={toggleSidebar}>Início</a>
         <a href="#about" className="block" onClick={toggleSidebar}>About</a>
         <a href="#portfolio" className="block" onClick={toggleSidebar}>Portfolio</a>
         <a href="#contact" className="block" onClick={toggleSidebar}>Contact</a>
