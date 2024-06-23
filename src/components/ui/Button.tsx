@@ -7,9 +7,7 @@ type ButtonProps = {
 const Button = ({ variant = "solid", className, children, ...rest }: ButtonProps) => {
 
   const buttonSizeClass = () => {
-    let className = "py-4 px-6 rounded-lg transtion-all duration-500 hover:font-bold"
-
-    return className
+    return "py-4 px-6 rounded-lg transtion-all duration-500 hover:font-bold "
   }
 
   const buttonVariantClass = () => {
@@ -17,10 +15,10 @@ const Button = ({ variant = "solid", className, children, ...rest }: ButtonProps
 
     switch (variant) {
       case "outlined":
-        className += "bg-transparent border-2 border-primary text-primary-800"
+        className += "bg-transparent border-2 border-primary text-primary"
         break;
       case "plain":
-        className += "bg-transparent border-0 text-primary-800"
+        className += "bg-transparent border-0 text-primary"
         break;
       case "secondary":
         className += "bg-accent border-0 text-white hover:shadow-lg"

@@ -1,14 +1,14 @@
-import Header from "@/components/Header";
-import Presentation from "@/components/Presentation";
+import Main from "@/components/Main";
 
 export default function Home() {
   return (
-    <main className="flex bg-primary-600 bg-cover h-full p-4">
-      <div className="flex flex-col h-full w-full md:px-4 bg-white md:bg-code overflow-auto rounded-lg relative">
-        <Header className="sticky top-0" />
-
-        <Presentation />
+    <main className="flex flex-col gap-8 justify-center items-center bg-primary bg-wallpapper bg-cover h-full p-8">
+      <div className="flex flex-col items-center gap-2">
+        <h1>Ricardo Rodrigues</h1>
+        <p>Desenvolvedor Fullstack</p>
       </div>
+
+      <Main />
     </main>
   );
 }
