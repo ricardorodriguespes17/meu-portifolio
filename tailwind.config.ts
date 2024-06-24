@@ -12,7 +12,7 @@ const config: Config = {
         'primary': '#101728',
         'secondary': '#9340ff',
         'white': '#fff',
-        'black': '#0C0C0D',
+        'black': '#000',
         'accent': '#D13766',
       },
       backgroundImage: {

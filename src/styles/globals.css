@@ -4,8 +4,7 @@
 @import './scroll.css';
 
 :root, body {
-  width: 100vw;
-  height: 100vh;
+  @apply flex flex-col w-screen h-screen
 }
 
 h1 {

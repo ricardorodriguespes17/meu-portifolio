@@ -2,6 +2,7 @@ import { IconType } from "react-icons"
 import { BsPersonVcard } from "react-icons/bs"
 import { FiGithub } from "react-icons/fi"
 import { GoInfo } from "react-icons/go"
+import { GrHomeRounded } from "react-icons/gr"
 import { HiOutlineAcademicCap } from "react-icons/hi"
 import { IoRocketOutline } from "react-icons/io5"
 import { MdOutlineFeedback } from "react-icons/md"
@@ -17,6 +18,8 @@ const Icon = ({ name, className }: IconProps) => {
 
   const getIcon = () => {
     switch (name) {
+      case "home":
+        return GrHomeRounded
       case "rocket":
         return IoRocketOutline
       case "about":
