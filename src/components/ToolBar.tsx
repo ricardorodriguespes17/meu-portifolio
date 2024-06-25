@@ -1,12 +1,9 @@
 "use client"
 import { usePathname } from "next/navigation"
 import Main from "./MainContainer"
+import classNames from "classnames"
 
-type ToolBarProps = {
-
-}
-
-const ToolBar = ({ }: ToolBarProps) => {
+const ToolBar = () => {
   const pathname = usePathname();
 
   const buttons = [
@@ -21,22 +18,23 @@ const ToolBar = ({ }: ToolBarProps) => {
     { path: "/feedback", title: "Feedback", iconName: "feedback" },
   ]
 
-  if(pathname === "/") {
+  if (pathname === "/") {
     return <></>
   }
 
   return (
-    <div className="flex bg-black w-full h-16 gap-2">
-      <Main.Button iconName="home" navigateTo="/" />
+    <div className="hidden md:flex bg-black w-full h-16 gap-2 fixed bottom-0">
+      <Main.Button iconName="home" navigateTo="/" className="hover:text-accent" />
 
       <div className="flex justify-center flex-1 overflow-auto pl-4">
         {buttons
-          .filter(item => item.path !== pathname && item.path !== "/")
+          .filter(item => item.path !== "/")
           .map(item => (
             <Main.Button
               navigateTo={item.path}
               title={item.title}
               iconName={item.iconName}
+              className={classNames(item.path === pathname && "!text-accent", "hover:text-accent")}
             />
           ))}
       </div>

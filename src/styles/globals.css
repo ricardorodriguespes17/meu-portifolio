@@ -4,7 +4,7 @@
 @import './scroll.css';
 
 :root, body {
-  @apply flex flex-col w-screen h-screen
+  @apply flex flex-col w-screen h-screen overflow-hidden;
 }
 
 h1 {
@@ -28,7 +28,7 @@ p {
 }
 
 a {
-  @apply text-primary hover:text-accent no-underline
+  @apply text-white hover:text-accent no-underline
 }
 
 @layer utilities {

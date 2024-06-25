@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  @apply md:w-4;
+  @apply md:w-2;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-white rounded-lg;
+  @apply bg-primary/0 rounded-lg;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary rounded-xl border-4 border-white border-solid;
+  @apply bg-black rounded-xl border-2 border-primary/0 border-solid;
 }
 
 ::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary rounded-xl transition-all;
+  @apply bg-black rounded-xl transition-all;
 }

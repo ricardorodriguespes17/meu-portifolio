@@ -17,6 +17,13 @@ const config: Config = {
       },
       backgroundImage: {
         'wallpapper': "url('/img/background.jpg')",
+      },
+      dropShadow: {
+        'sm': '0 0 2px rgba(255,255,255, 0.5)',
+        'md': '0 0 4px rgba(255,255,255, 0.5)',
+        'lg': '0 0 6px rgba(255,255,255, 0.5)',
+        'xl': '0 0 8px rgba(255,255,255, 0.5)',
+        '2xl': '0 0 10px rgba(255,255,255, 0.5)',
       }
     },
   },
