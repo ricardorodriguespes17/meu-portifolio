@@ -3,12 +3,12 @@ import Main from "@/components/MainContainer";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 mb-8">
         <h1>Ricardo Rodrigues</h1>
         <p>Desenvolvedor Fullstack</p>
       </div>
 
-      <Main>
+      <Main className="!py-12">
         <Main.Button navigateTo="/about" label="Sobre" iconName="about" />
         <Main.Button navigateTo="/skills" label="Habilidades" iconName="rocket" />
         <Main.Button navigateTo="/formation" label="Formação" iconName="academic" />

@@ -24,7 +24,9 @@ const MainButton = ({ label, title, iconName, navigateTo, className }: MainButto
     <Button
       variant="plain"
       title={title}
-      className={classNames("flex flex-col justify-center items-center gap-1 text-white hover:shadow-2xl hover:bg-primary/30", className)}
+      className={classNames(
+        "flex flex-col justify-center items-center gap-1 text-white hover:shadow-2xl hover:bg-primary/30 hover:text-accent",
+        className)}
       onClick={onClick}
     >
       <Icon className="text-5xl" name={iconName} />
