@@ -26,10 +26,10 @@ const ToolBar = ({ }: ToolBarProps) => {
   }
 
   return (
-    <div className="flex bg-black w-full h-16">
+    <div className="flex bg-black w-full h-16 gap-2">
       <Main.Button iconName="home" navigateTo="/" />
 
-      <div className="flex justify-center flex-1">
+      <div className="flex justify-center flex-1 overflow-auto pl-4">
         {buttons
           .filter(item => item.path !== pathname && item.path !== "/")
           .map(item => (
