@@ -14,7 +14,7 @@ const Main = ({ children, grid = true, className }: MainProps) => {
   return (
     <div className={
       classNames(
-        "justify-start items-center gap-x-24 bg-primary w-[850px] max-w-full rounded-lg bg-opacity-70 backdrop-blur-sm py-2 px-6 overflow-auto",
+        "justify-start items-center gap-x-24 bg-primary w-[850px] max-w-full rounded-lg bg-opacity-70 backdrop-blur-sm py-2 pb-6 px-6 overflow-auto",
         innerClassName,
         className
       )}>
